@@ -1,4 +1,5 @@
 @import bootstrap/bootstrap
+@import icomoon
 @import my_popovers
 
 .my-well
@@ -6,3 +7,16 @@
 
 .img-responsive
   margin-bottom: 20px
+
+.gromn
+  display: inline-block 
+  font-size: 14px
+  text-shadow: 0 -1px 1px pink
+  +transition(-webkit-transform .1s ease-in-out, color .14s ease-in-out, opacity .6s ease-in-out)
+  +opacity(1)
+  &:hover
+    +translate3d(20px, 20px, 20px)
+    +scale(3)
+    +opacity(0)
+    cursor: pointer
+    color: #6cff50
