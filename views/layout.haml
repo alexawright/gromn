@@ -22,7 +22,13 @@
     / = haml :navbar
     .container
       = yield
-
+      %ul.nav
+        %li
+          %a.about{:href => '#'} Who We Are
+        %li
+          %a{:href => '/about'} Brains
+        %li
+          %a{:href => '/about'} Meow
     %script{:src => "/js/jquery.js"}
     %script{:src => "/js/dropdown.js"}
     %script{:src => "/js/tooltip.js"}

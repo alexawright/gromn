@@ -2,21 +2,83 @@
 @import icomoon
 @import my_popovers
 
-.my-well
-  min-height: 200px
+body
+  background-image: url(http://www.alexa-wright.com/images/footer.jpg)
 
-.img-responsive
-  margin-bottom: 20px
-
-.gromn
-  display: inline-block 
-  font-size: 14px
-  text-shadow: 0 -1px 1px pink
-  +transition(-webkit-transform .1s ease-in-out, color .14s ease-in-out, opacity .6s ease-in-out)
-  +opacity(1)
+a
+  color: gray
   &:hover
-    +translate3d(20px, 20px, 20px)
-    +scale(3)
-    +opacity(0)
-    cursor: pointer
-    color: #6cff50
+    text-decoration: none
+    color: gray
+
+.title
+  text-align: center
+  text-decoration: none
+  font-size: 40px
+  text-transform: uppercase
+  color: #535353
+  font-family: avenir
+  letter-spacing: 3px
+  margin-top: 50px
+  font-weight: 700
+  text-shadow: 0 -1px 0 #2C2C2C
+
+.main-box 
+  height: auto
+  // background: url(http://www.alexa-wright.com/images/threads-03.jpg)
+  margin: auto
+  width: 620px
+  height: 620px
+  border: 30px solid rgba(231, 231, 231, .7)
+  padding: 215px 100px
+  margin-top: 20px
+  margin-bottom: 20px
+  text-align: center
+  img 
+    width: 200px
+
+
+.main-box-content
+  h1
+    text-align: center
+    text-decoration: none
+    font-size: 85px
+    text-transform: uppercase
+    color: #535353
+    font-family: avenir
+    letter-spacing: 3px
+    font-weight: 700
+    text-shadow: 0 -1px 0 #2C2C2C
+  p
+    font-family: avenir
+    font-weight: 100
+    font-size: 18px
+    line-height: 30px
+    text-align: center
+  .about 
+    display: none
+
+.main-box-content
+  +opacity(0)
+  +transition(2s opacity ease-in-out)
+  &.load
+    +opacity(1)
+
+.nav
+  text-align: center
+  li 
+    display: inline-block
+    background: none
+  a
+    font-size: 17px
+    text-transform: uppercase
+    font-family: avenir
+    font-weight: 200
+    color: #999999
+    background: none
+    letter-spacing: 1.8px
+    +transition(opacity 2s linear)
+    &:hover
+      color: gray
+      background: none
+
