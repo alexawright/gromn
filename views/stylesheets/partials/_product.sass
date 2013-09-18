@@ -23,10 +23,15 @@ button
     background: #575757
 
 img
+  &.thumbnail,
+  &.product-views
+    &:hover
+      opacity: 0.5
+      -webkit-transition: opacity .2s ease-in-out
   &.product-views
     margin-bottom: 20px
-  &.product-main
-    margin: 30px 10px 10px
+img.product-main
+  margin: 30px 10px 10px
 
 .row.buy
   margin: 10px
