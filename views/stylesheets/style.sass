@@ -1,42 +1,27 @@
 @import bootstrap/bootstrap
 @import partials/icomoon
 @import partials/my_popovers
+@import partials/navbar
 @import partials/type
+@import partials/store
+@import partials/product
+@import partials/footer
+@import partials/responsive
 
 body
   background-image: url(http://www.alexa-wright.com/images/footer.jpg)
   -webkit-font-smoothing: antialiased
 
-a
-  color: gray
-  &:hover
-    text-decoration: none
-    color: gray
-
-.title
-  text-align: center
-  text-decoration: none
-  font-size: 60px
-  text-transform: uppercase
-  color: #535353
-  font-family: avenir
-  letter-spacing: 1px
-  margin-top: 50px
-  font-weight: 600
-  line-height: 60px
-  text-shadow: 0 -1px 0 #2C2C2C
-
 .main-box 
   height: auto
   margin: auto
-  width: 970px
+  width: 950px
   background: white
   min-height: 500px
-  border: 30px solid rgba(231, 231, 231, .7)
+  border: 30px solid rgba(231, 231, 231, 0.5)
   margin-top: 20px
   text-align: center
   overflow: auto
-
 
 .main-box-content
   .about 
@@ -45,6 +30,8 @@ a
     display: none
   .product
     display: none
+  .contact
+    display: none
 
 .main-box-content
   +opacity(0)
@@ -52,132 +39,71 @@ a
   &.load
     +opacity(1)
 
-.nav
-  text-align: center
-  padding: 0
-  li 
-    display: inline-block
-    background: none
-    margin: 0 20px
-  a
-    font-size: 13px
-    text-transform: uppercase
-    font-family: avenir
-    font-weight: 400
-    color: #6B6B6B
-    background: none
-    letter-spacing: 1.8px
-    +transition(opacity 2s linear)
-    &:hover
-      color: gray
-      border-bottom: 1px solid $gray-light
-
 .about-inner-box
-  padding: 53px 75px
+  padding: 40px 55px
 
-.product-inner-box
-  padding: 10px 80px 20px
-
-.row
-  text-align: center
-
-.item
-  margin: 10px 0 10px
-  text-align: center
-  padding: 25px 30px 0
-  img 
-    display: inline-block
-    width: 100%
-    &:hover
-      opacity: 0.5
-      -webkit-transition: opacity .5s ease-in-out
-  &.info
-    visibility: none
-    &:hover
-      display: visible
+.contact-inner-box
+  padding: 40px 55px
+  text-align: left
 
 img
-  &.product-tnail 
-    padding: 15px
-  &.product-sub-tnail
-    margin-bottom: 20px
-    &:hover
-      opacity: 0.5
-      -webkit-transition: opacity .5s ease-in-out
-  &.about-portrait
+  &:hover
+    opacity: 0.5
+    -webkit-transition: opacity .5s ease-in-out
+  &.full-width-image
     width: 100%
     margin-top: 0px
-  &.product-main
-    margin: 30px 10px 10px
-  &.similar-items
-    background: red
+    &:hover
+      opacity: 1
+      -webkit-transition: opacity .5s ease-in-out
+img.img-responsive
+  margin: auto
 
-.product-description
-  margin-bottom: 60px
-
-
-.footer
-  color: rgb(162, 162, 162)
-  font-family: avenir
-  font-weight: 600
-  letter-spacing: 1px
+.form-control
   display: block
-  padding: 50px 0 0 
-  clear: both
   width: 100%
-  height: 120px
-  text-align: center
-  font-size: 12px
-  position: relative
-  text-transform: uppercase
-  .icon
-    font-size: 25px
-
-button
-  background: black
+  height: $input-height-base
+  // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  padding: $padding-base-vertical $padding-base-horizontal
+  font-size: 14px
+  color: black
   font-family: avenir
-  font-weight: 600
-  color: white
-  text-transform: uppercase
-  padding: 13px
-  border: none
-  margin: 15px 0px
-  width: 100%
-
-p.more-items
-  display: block
-  margin-top: -40px
-  text-align: center
-  background: white
-  width: 170px
-  margin: -33px auto 0
-  color: rgb(53, 53, 53)
-  font-weight: 600
-  letter-spacing: 1px
-  text-transform: uppercase
-  font-size: 13px
-
+  vertical-align: middle
+  border: 1px solid $input-border
+  border-radius: $input-border-radius
+  // +box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075))
+  // +transition(border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s)
 
 @media (max-width: 1000px)
 
   .main-box
-    width: 700px
+    width: auto
+    min-height: 100px
 
 @media (max-width: 700px)
 
   .main-box
-    width: 400px
-    min-height: 200px
+    width: auto
+    min-height: 100px
+    border: 20px solid rgba(231, 231, 231, 0.5)
+  .footer
+    padding: 10px
+    .row
+      .col-sm-4 
+        margin-top: 10px
 
-  .main-box-content h1
-    font-size: 50px
 
 @media (max-width: 500px)
 
   .main-box
-    width: 300px
-    min-height: 200px
-
-
-
-
+    min-height: 100px
+    margin: auto
+    width: auto
+  .container
+    padding: 10px
+  .about-inner-box
+    padding: 25px
+  .main-box 
+    border: 10px solid rgba(231, 231, 231, 0.5)
+  .product-inner-box
+    padding: 35px

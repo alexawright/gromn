@@ -18,3 +18,11 @@ $ ->
     $(".main-box-content .intro").fadeOut 200, ->
       $(".main-box-content .product").fadeIn 200
  
+  $(".footer a").on "click", (e) ->
+    e.preventDefault()
+    $(".main-box-content .store").hide()
+    $(".main-box-content .product").hide()
+    $(".main-box-content .intro").fadeOut 200, ->
+      $(".main-box-content .contact").fadeIn 200
+ 
+ 

@@ -7,12 +7,25 @@ h3,
 h4,
 h5,
 h6,
+h7,
 p
   +font
   line-height: 1.6em
   margin: .2em 0
 
 
+.title
+  text-align: center
+  text-decoration: none
+  font-size: 60px
+  text-transform: uppercase
+  color: #535353
+  font-family: avenir
+  letter-spacing: 1px
+  margin-top: 50px
+  font-weight: 600
+  line-height: 60px
+  text-shadow: 0 -1px 0 #2C2C2C
 h1
   text-align: center
   font-size: 95px
@@ -20,36 +33,81 @@ h1
   font-weight: 500
   text-shadow: 0 -1px 0 #ACACAC
 h2
-  font-size: 16px
-  color: #7E7E7E
-  font-weight: 400
-  letter-spacing: .5px
+  font-size: 14px
+  color: #929292
+  font-weight: 600
+  letter-spacing: .08em
+  text-transform: uppercase
+  &.similar
+    font-size: 12px
 h3
   font-size: 16px
   font-weight: 500
   text-transform: uppercase
   letter-spacing: 1px
+  &.similar
+    font-size: 14.5px
+    letter-spacing: 1.5px
 h4
   font-size: 18px
   font-weight: 600
   text-transform: uppercase
   letter-spacing: 1px
+  text-align: left
 h5
   display: inline-block
   font-size: 22px
   letter-spacing: 1px
-  font-weight: 400
+  font-weight: 500
 h6
   text-align: left
-  font-size: 16px
+  font-size: 14px
   font-weight: 600
   text-transform: uppercase
   letter-spacing: 1px
+h7
+  display: block
+  margin-top: -40px
+  text-align: center
+  background: white
+  width: 170px
+  margin: -33px auto 0
+  color: rgb(53, 53, 53)
+  font-weight: 600
+  letter-spacing: 1px
+  text-transform: uppercase
+  font-size: 13px
 
 p
-  font-weight: 200
-  font-size: 14px
   text-align: justify
-  color: #2B2B2B
+  font-size: 14px
+  font-family: adobe caslon pro, georgia, serif
+  font-weight: 100
+  letter-spacing: .5px
+  color: rgb(83, 83, 83)
   &.description
-    line-height: 1.6em
+    font-size: 14px
+    font-family: adobe caslon pro, georgia, serif
+    font-weight: 100
+    letter-spacing: .5px
+    color: rgb(83, 83, 83)
+
+a
+  color: gray
+  &:hover
+    text-decoration: none
+    color: gray
+
+.nav
+  a
+    font-size: 12px
+    text-transform: uppercase
+    font-family: avenir
+    font-weight: 500
+    color: #6B6B6B
+    background: none
+    letter-spacing: 2px
+    +transition(opacity 2s linear)
+    &:hover
+      color: gray
+      border-bottom: 1px solid $gray-light
