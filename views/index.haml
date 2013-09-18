@@ -4,11 +4,11 @@
 
   %ul.nav
     %li
-      %a.store{:href => '/store'} Store
+      %a.store{:href => '#', "data-link" => "store"} Store
     %li
-      %a.about{:href => '#'} Brains
+      %a.about{:href => '#', "data-link" => "about"} Brains
     %li
-      %a{:href => 'http://gromn.tumblr.com'} Journal
+      %a{:href => 'http://gromn.tumblr.com', target: "_blank", "data-link" => "blog"} Journal
 
   .main-box
     .main-box-content
@@ -17,24 +17,16 @@
       .about
         %p GROMN is the brainchild Amiko Simonetti & Alexa Wright, two best friends who love designing clothing but can’t tolerate the ego overload in fashion. So we’re designing for people who want to participate in good clothing at a skin deep level. Meow meow meow meow smudge smell face. Come hang with us. So we’re designing for people who want to participate in good clothing at a skin deep level. Meow meow meow meow smudge smell face. Come hang with us. 
       .store
-        .col-sm-3
-          - 3.times do
+        - 24.times do
+          .col-sm-3
             .item
-              %img.product-tnail{:src => '/images/bag.jpg'}
-              %h2 Potato Tote
-              %h3 $42
-        .col-sm-3
-          - 3.times do
-            .item
-              %img.product-tnail{:src => '/images/bag.jpg'}
-              %h2 Fruitface Bat Creature
-              %h3 $42
-        .col-sm-3
-          - 3.times do
-            .item
-              %img.product-tnail{:src => '/images/bag.jpg'}
-              %h2 Title Here
-              %h3 $42
+              %a{:href => '/product'}
+                %img.product-tnail{:src => '/images/bag.jpg'}
+                %h2 Fruitface Bat Creature
+                %h3 $42
+
+      .product
+        %p GROMN is the brainchild Amiko Simonetti & Alexa Wright, two best friends who love designing clothing but can’t tolerate the ego overload in fashion. So we’re designing for people who want to participate in good clothing at a skin deep
 .footer
   .col-sm-4 © 2013
   .col-sm-4.icon 

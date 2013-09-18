@@ -5,12 +5,16 @@ $ ->
   $(window).load ->
     $(".main-box-content").addClass "load"
 
-  $("a.about").on "click", (e) ->
-    e.preventDefault()
-    $(".main-box-content .intro").fadeOut 200, ->
-      $(".main-box-content .about").fadeIn 200
+  $(".nav li a").on "click", (e) ->
+    link = $(@).attr("data-link")
+    if link isnt "blog"
+      e.preventDefault()    
+      $(".main-box-content > div").hide()
+      $(".main-box-content .#{link}").fadeIn 200
 
-  $("a.store").on "click", (e) ->
+  $(".item a").on "click", (e) ->
     e.preventDefault()
+    $(".main-box-content .store").hide()
     $(".main-box-content .intro").fadeOut 200, ->
-      $(".main-box-content .store").fadeIn 200
+      $(".main-box-content .product").fadeIn 200
+ 
