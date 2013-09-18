@@ -34,25 +34,33 @@
 
       .product
         %img.product-main{:src => '/images/bag.jpg'}
-        .product-inner-box
-          %h4 Product Name
-          %p.description Description come hang with us. So we’re designing for people who want to participate. Description come hang with us. So we’re designing for people who want to participate. 
-          %h6 Notes
-          %p.description Description come hang with us. So we’re designing for people who want to participate. 
-          %hr
-          %h5 $45.00
-          %button Add to Cart
-        %hr
-        %p.more-items 
-          Similar Items
-          .row
-            - 3.times do
-              .col-sm-3
-                .item
-                  %a{:href => '/product'}
-                    %img.product-sub-tnail{:src => '/images/bag.jpg'}
-                    %h2 Fruitface Bat Creature
-                    %h3 $42
+          .product-inner-box
+            .product-description
+              %h4 Product Name
+              %hr
+              .row
+                .col-sm-8
+                  %p.description Description come hang with us. So we’re designing for people who want to participate. Description come hang with us. So we’re designing for people who want to participate.
+                  %br
+                  %h6 Notes
+                  %p.description Description come hang with us. So we’re designing for people who want to participate. 
+                .col-sm-4
+                  - 4.times do    
+                    %img.product-sub-tnail{:src => 'http://placehold.it/50x50'}
+                  %h5 $45.00
+                  %button Add to Cart
+            .row
+              %hr
+              %p.more-items 
+                Similar Items
+            .row
+              - 3.times do
+                .col-sm-4
+                  .item
+                    %a{:href => '/product'}
+                      %img.similar-items{:src => '/images/bag.jpg'}
+                      %h2 Fruitface Bat Creature
+                      %h3 $42
 .footer
   .col-sm-4 © 2013
   .col-sm-4.icon 

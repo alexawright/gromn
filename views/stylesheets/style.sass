@@ -76,7 +76,7 @@ a
   padding: 53px 75px
 
 .product-inner-box
-  padding: 10px 100px 50px
+  padding: 10px 80px 20px
 
 .row
   text-align: center
@@ -97,16 +97,24 @@ a
       display: visible
 
 img
-  .product-sub-tnail
+  &.product-tnail 
+    padding: 15px
+  &.product-sub-tnail
+    margin-bottom: 20px
     &:hover
       opacity: 0.5
       -webkit-transition: opacity .5s ease-in-out
   &.about-portrait
     width: 100%
     margin-top: 0px
+  &.product-main
+    margin: 30px 10px 10px
+  &.similar-items
+    background: red
 
-img.product-main
-  margin: 30px
+.product-description
+  margin-bottom: 60px
+
 
 .footer
   color: rgb(162, 162, 162)
@@ -131,9 +139,10 @@ button
   font-weight: 600
   color: white
   text-transform: uppercase
-  padding: 15px
+  padding: 13px
   border: none
-  margin: 20px
+  margin: 15px 0px
+  width: 100%
 
 p.more-items
   display: block
@@ -147,6 +156,7 @@ p.more-items
   letter-spacing: 1px
   text-transform: uppercase
   font-size: 13px
+
 
 @media (max-width: 1000px)
 
