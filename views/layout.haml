@@ -2,7 +2,7 @@
 %html{:lang => "en"}
   %head
     %meta{:charset => "utf-8"}/
-    %title Gromn
+    %title Gromn • NYC
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %meta{:content => "", :name => "description"}/
     %meta{:content => "", :name => "author"}/
@@ -22,13 +22,6 @@
     / = haml :navbar
     .container
       = yield
-      %ul.nav
-        %li
-          %a.about{:href => '#'} Who We Are
-        %li
-          %a{:href => '/about'} Brains
-        %li
-          %a{:href => '/about'} Meow
     %script{:src => "/js/jquery.js"}
     %script{:src => "/js/dropdown.js"}
     %script{:src => "/js/tooltip.js"}

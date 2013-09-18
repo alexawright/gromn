@@ -1,9 +1,45 @@
-.title 
-  %a{:href => '/index'} Gromn
+.container
+  .title 
+    %a{:href => '/index'} - Gromn - 
 
-.main-box
-  .main-box-content
-    .intro
-      %h1 Gromn
-    .about
-      %p GROMN is the brainchild Amiko Simonetti & Alexa Wright, two best friends who love designing clothing but can’t tolerate the ego overload in fashion. So we’re designing for people who want to participate in good clothing at a skin deep level. Meow meow meow meow smudge smell face. Come hang with us. 
+  %ul.nav
+    %li
+      %a.store{:href => '/store'} Store
+    %li
+      %a.about{:href => '#'} Brains
+    %li
+      %a{:href => 'http://gromn.tumblr.com'} Journal
+
+  .main-box
+    .main-box-content
+      .intro
+        %h1 Hello there!
+      .about
+        %p GROMN is the brainchild Amiko Simonetti & Alexa Wright, two best friends who love designing clothing but can’t tolerate the ego overload in fashion. So we’re designing for people who want to participate in good clothing at a skin deep level. Meow meow meow meow smudge smell face. Come hang with us. So we’re designing for people who want to participate in good clothing at a skin deep level. Meow meow meow meow smudge smell face. Come hang with us. 
+      .store
+        .col-sm-3
+          - 3.times do
+            .item
+              %img.product-tnail{:src => '/images/bag.jpg'}
+              %h2 Potato Tote
+              %h3 $42
+        .col-sm-3
+          - 3.times do
+            .item
+              %img.product-tnail{:src => '/images/bag.jpg'}
+              %h2 Fruitface Bat Creature
+              %h3 $42
+        .col-sm-3
+          - 3.times do
+            .item
+              %img.product-tnail{:src => '/images/bag.jpg'}
+              %h2 Title Here
+              %h3 $42
+.footer
+  .col-sm-4 © 2013
+  .col-sm-4.icon 
+    %a.icon-mail{:href => "mailto:alexalwright@gmail.com", :target => "_blank"}
+    %a.icon-mail{:href => "mailto:alexalwright@gmail.com", :target => "_blank"}
+    %a.icon-twitter{:href => "http://www.twitter.com/eatthesalt", :target => "_blank"}
+  .col-sm-4 
+    %a{:href => "mailto:hello@gromn.com"} Contact Us
