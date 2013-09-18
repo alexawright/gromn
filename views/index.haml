@@ -28,20 +28,23 @@
 
       .product
         %img.product-main{:src => '/images/bag.jpg'}
-        %h4 Product Name
-        %p.description Description come hang with us. So we’re designing for people who want to participate. 
-        %button Add to Cart
+        .product-inner-box
+          %h4 Product Name
+          %hr
+          %p.description Description come hang with us. So we’re designing for people who want to participate. Description come hang with us. So we’re designing for people who want to participate. 
+          %h5 $45.00
+          %button Add to Cart
         %hr
         %p.more-items 
           Similar Items
-        .row
-          - 3.times do
-            .col-sm-3
-              .item
-                %a{:href => '/product'}
-                  %img.product-sub-tnail{:src => '/images/bag.jpg'}
-                  %h2 Fruitface Bat Creature
-                  %h3 $42
+          .row
+            - 3.times do
+              .col-sm-3
+                .item
+                  %a{:href => '/product'}
+                    %img.product-sub-tnail{:src => '/images/bag.jpg'}
+                    %h2 Fruitface Bat Creature
+                    %h3 $42
 .footer
   .col-sm-4 © 2013
   .col-sm-4.icon 
