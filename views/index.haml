@@ -6,7 +6,7 @@
     %li
       %a.store{:href => '#', "data-link" => "store"} Store
     %li
-      %a.about{:href => '#', "data-link" => "about"} Brains
+      %a.about{:href => '#', "data-link" => "about"} About
     %li
       %a{:href => 'http://gromn.tumblr.com', target: "_blank", "data-link" => "blog"} Journal
 
@@ -15,8 +15,14 @@
       .intro
         %h1 Hello there!
       .about
+        %img.about-portrait{:src => 'http://placehold.it/600x300'}
         .about-inner-box
-          %p GROMN is the brainchild Amiko Simonetti & Alexa Wright, two best friends who love designing clothing but can’t tolerate the ego overload in fashion. So we’re designing for people who want to participate in good clothing at a skin deep level. Meow meow meow meow smudge smell face. Come hang with us. So we’re designing for people who want to participate in good clothing at a skin deep level. Meow meow meow meow smudge smell face. Come hang with us. 
+          %h4 Our Story
+          .row
+            .col-sm-6
+              %p GROMN is the brainchild Amiko Simonetti & Alexa Wright, two best friends who love designing clothing but can’t tolerate the ego overload in fashion. So we’re designing for people who want to participate in good clothing at a skin deep level. Meow meow meow meow smudge smell face. Come hang with us. So we’re designing for people who want to participate in good clothing at a skin deep level. Meow meow meow meow smudge smell face. 
+            .col-sm-6
+              %p Meow hang with us. Friends who love designing clothing but can’t tolerate the ego overload in fashion. So we’re designing for people who want to participate in good clothing at a skin deep level. Meow meow meow meow smudge smell face. Come hang with us. So we’re designing for people who want to participate in good clothing at a skin deep level. Meow meow meow meow smudge smell face. Come hang with us. 
       .store
         - 12.times do
           .col-sm-6
@@ -30,8 +36,10 @@
         %img.product-main{:src => '/images/bag.jpg'}
         .product-inner-box
           %h4 Product Name
-          %hr
           %p.description Description come hang with us. So we’re designing for people who want to participate. Description come hang with us. So we’re designing for people who want to participate. 
+          %h6 Notes
+          %p.description Description come hang with us. So we’re designing for people who want to participate. 
+          %hr
           %h5 $45.00
           %button Add to Cart
         %hr
