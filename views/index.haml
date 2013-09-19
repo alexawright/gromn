@@ -4,9 +4,9 @@
 
   %ul.nav
     %li
-      %a.store{:href => '#', "data-link" => "collections"} Collections
+      %a.store{:href => '#', "data-link" => "collections"} Lookbook
     %li
-      %a.store{:href => '#', "data-link" => "store"} Store
+      %a.store{:href => '#', "data-link" => "store"} Shop
     %li
       %a.about{:href => '#', "data-link" => "about"} Story
     %li
@@ -15,18 +15,19 @@
   .main-box
     .main-box-content
       .intro
-        / %img.full-width-image.img-responsive{:src => 'http://placehold.it/950x500'}
+        %img.main-page.img-responsive{:src => 'http://placehold.it/950x600'}
+
       .about
         %img.full-width-image{:src => 'http://placehold.it/600x300'}
         .inner-box.about
           .row
             .col-sm-6
-              %p GROMN is the brainchild Amiko Simonetti & Alexa Wright, two best friends who love designing clothing but can’t tolerate the ego overload in fashion. So we’re designing for people who want to participate in good clothing at a skin deep level. Meow meow meow meow smudge smell face. Come hang with us. So we’re designing for people who want to participate in good clothing at a skin deep level. Meow meow meow meow smudge smell face. 
+              %p GROMN is squid velit actually, Banksy locavore proident. Messenger bag ullamco chia bespoke, duis sapiente meggings Odd Future keytar accusamus nesciunt lo-fi plaid dolore. Sustainable accusamus sartorial, odio 3 wolf moon 8-bit Bushwick. Accusamus gluten-free cred raw denim 90's. Mixtape deep v banjo, Tumblr biodiesel ut viral. XOXO id flannel wayfarers farm-to-table, squid nulla Intelligentsia tattooed sapiente minim sed jean shorts. Kitsch next level officia, esse art party.
             .col-sm-6
-              %p Meow hang with us. Friends who love designing clothing but can’t tolerate the ego overload in fashion. So we’re designing for people who want to participate in good clothing at a skin deep level. Meow meow meow meow smudge smell face. Come hang with us. So we’re designing for people who want to participate in good clothing at a skin deep level. Meow meow meow meow smudge smell face. Come hang with us. 
+              %p Placeat squid velit actually, Banksy locavore proident. Messenger bag ullamco chia bespoke, duis sapiente meggings Odd Future keytar accusamus nesciunt lo-fi plaid dolore. Sustainable accusamus sartorial, odio 3 wolf moon 8-bit Bushwick. Accusamus gluten-free cred raw denim 90's. Mixtape deep v banjo, Tumblr biodiesel ut viral. XOXO id flannel wayfarers farm-to-table, squid nulla Intelligentsia tattooed sapiente minim sed jean shorts. Kitsch next level officia.
 
       .collections
-        %img.img-responsive{:src => 'http://placehold.it/950x500'}
+        %img.img-responsive{:src => '/images/img.jpg'}
 
 
       .store
@@ -51,12 +52,8 @@
                     %img.thumbnail{:src => '/images/tank-black.jpg'}
 
       .product
-        .arrow.left
-          %span.glyphicon.glyphicon-chevron-left
         %img.product-main.img-responsive{:src => '/images/bag.jpg'}
         %img.full-width-image.img-responsive.view1{:src => 'http://placehold.it/950x500'}
-        .arrow.right
-          %span.glyphicon.glyphicon-chevron-right
         %br
         .row.views
           .col-sm-12
@@ -64,15 +61,20 @@
               %a{:href => '/view1'}
                 %img.product-views{:src => 'http://placehold.it/60x60'}
           .inner-box.product
+            / .row.arrows
+            /   .col-sm-6.left
+            /     %span.glyphicon.glyphicon-chevron-left
+            /   .col-sm-6.right
+            /     %span.glyphicon.glyphicon-chevron-right
             .product-description
               %h4 The Potato Tote
               %hr
               .row
                 .col-sm-6
-                  %p.description Hoodie High Life tousled culpa trust fund. Tempor enim occaecat, biodiesel flexitarian freegan culpa Odd Future brunch Banksy next level. Godard fugiat vero farm-to-table Tonx pickled. Schlitz enim whatever, chia ennui aute letterpress authentic Pinterest aliquip. Blue Bottle ethnic Schlitz ennui farm-to-table. Proident Godard letterpress, shabby chic butcher reprehenderit esse. Proident Godard letterpress, shabby chic butcher reprehenderit esse.
+                  %p Hoodie High Life tousled culpa trust fund. Tempor enim occaecat, biodiesel flexitarian freegan culpa Odd Future brunch Banksy next level. Godard fugiat vero farm-to-table Tonx pickled. Schlitz enim whatever, chia ennui aute letterpress authentic Pinterest aliquip. Blue Bottle ethnic Schlitz ennui farm-to-table. Proident Godard letterpress, shabby chic butcher reprehenderit esse. Proident Godard letterpress, shabby chic butcher reprehenderit esse.
                 .col-sm-6
                   %h6 Notes
-                  %p.description Cupidatat distillery keffiyeh, drinking vinegar put a bird on it XOXO scenester. American Apparel lomo reprehenderit duis. Put a bird on it cardigan Brooklyn mlkshk hashtag.
+                  %p Cupidatat distillery keffiyeh, drinking vinegar put a bird on it XOXO scenester. American Apparel lomo reprehenderit duis. Put a bird on it cardigan Brooklyn mlkshk hashtag.
                   %hr
                   .row.buy
                     .col-sm-6
@@ -87,25 +89,44 @@
                   .col-sm-4
                     .item
                       %a{:href => '/product'}
-                        %img.similar-items{:src => '/images/bag.jpg'}
+                        %img.similar-items{:src => '/images/tank.jpg'}
 
       .contact
         .inner-box.contact
+          / .row
+          /   .col-sm-12
+          /     %h5 Hello There Test
+          /     %hr
           .row
             .col-sm-6
-              %p Cupidatat distillery keffiyeh, drinking vinegar put a bird on it XOXO scenester. American Apparel lomo reprehenderit duis. Put a bird on it cardigan Brooklyn mlkshk hashtag. Cupidatat distillery keffiyeh, drinking vinegar put a bird on it XOXO scenester. American Apparel.
-            .col-sm-6
+              %p Cupidatat distillery keffiyeh, drinking vinegar put a bird on it XOXO scenester. American Apparel lomo reprehenderit duis. Put a bird on it cardigan Brooklyn mlkshk hashtag. 
+              %hr
+              %h5 Email
+              %br
+              %p Say hello at 
               %a{:href => 'http://www.instagram.com/gromn'} 
-                .icon-twitter Instagram
-              %a{:href => 'http://www.twitter.com/gogromn'} 
-                .icon-twitter Twitter
+                hello@gromn.com              
+              %br
+              %p Get more info at 
+              %a{:href => 'http://www.instagram.com/gromn'} 
+                info@gromn.com
+              %br
+              %h5 Find Us             
+              %br
+                %a{:href => 'http://www.instagram.com/gromn'} 
+                  Instagram
+                %br
+                %a{:href => 'http://www.twitter.com/gogromn'} 
+                  Twitter
+            .col-sm-6
               %p Cupidatat distillery keffiyeh, drinking vinegar put a bird on it XOXO scenester. American Apparel lomo reprehenderit duis. Put a bird on it cardigan Brooklyn mlkshk hashtag. Cupidatat distillery keffiyeh, drinking vinegar put a bird on it XOXO scenester. American Apparel.
 
-.footer
-  .row
-    .col-sm-6 © 2013 Gromn
-    / .col-sm-4.icon 
-    /   %a.icon-mail{:href => "mailto:alexalwright@gmail.com", :target => "_blank"}
-    /   %a.icon-twitter{:href => "http://www.twitter.com/eatthesalt", :target => "_blank"}
-    .col-sm-6
-      %a.contact-link{:href => "/contact"} Contact Us
+  .footer
+    .inner-box.footer
+      .row
+        .col-sm-6.left © 2013 Gromn
+        / .col-sm-4.icon 
+        /   %a.icon-mail{:href => "mailto:alexalwright@gmail.com", :target => "_blank"}
+        /   %a.icon-twitter{:href => "http://www.twitter.com/eatthesalt", :target => "_blank"}
+        .col-sm-6.right
+          %a.contact-link{:href => "/contact"} Contact Us

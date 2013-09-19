@@ -9,16 +9,19 @@
 @import partials/responsive
 
 body
-  // background-image: url(http://www.alexa-wright.com/images/footer.jpg)
   -webkit-font-smoothing: antialiased
+
+.img.main-page
+  padding: 20px
+  display: inline-block
 
 .main-box 
   height: auto
   margin: auto
-  width: 950px
+  width: 970px
   background: white
-  min-height: 500px
-  border: 30px solid rgba(231, 231, 231, 0.5)
+  min-height: 520px
+  border: 30px solid rgba(231, 231, 231, 0.4)
   margin-top: 26px
   text-align: center
   overflow: auto
@@ -47,6 +50,10 @@ body
     padding: 5px 5px 25px
   &.product
     padding: 0px 80px 30px
+  &.footer
+    padding: 0px
+    width: 950px
+    margin: auto
 
 img
   &.full-width-image
@@ -58,11 +65,18 @@ img
 hr
   margin-top: 13px
   margin-bottom: 13px
+  // border: 1.5px solid rgba(231, 231, 231, 1)
 
 .row.collections
   margin: 0
   .col-sm-4
     padding: 0
+
+.right
+  text-align: right
+
+.left
+  text-align: left
 
 
 @media (max-width: 1000px)
