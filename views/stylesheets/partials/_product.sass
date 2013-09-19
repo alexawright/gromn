@@ -1,37 +1,58 @@
-.product-inner-box
-  padding: 10px 80px 20px
-
 .product-description
   margin-bottom: 60px
 
 .similar-items
   margin-bottom: 20px
-  // display: inline-block
   width: 100% 
 
 button
   background: black
-  font-family: avenir
   font-weight: 500
   color: white
+  font-size: 12px
   text-transform: uppercase
-  padding: 13px
+  padding: 13px 30px
   border: none
-  width: auto
-  letter-spacing: 1px
+  letter-spacing: 2px
   &:hover
     background: #575757
 
 img
   &.thumbnail,
-  &.product-views
+  &.product-views,
+  &.similar-items
     &:hover
       opacity: 0.5
       -webkit-transition: opacity .2s ease-in-out
   &.product-views
     margin-bottom: 20px
-img.product-main
-  margin: 30px 10px 10px
+    margin-top: 20px
+    display: none
+  &.product-main.img-responsive
+    margin-top: 30px 
+
+img.thumbnail.soldout
+  opacity: 0.3
+
+.glyphicon
+  font-size: 30px
+  font-color: gray
+
+.arrow 
+  display: inline-block
+  position: absolute
+  color: rgba(180, 180, 180, 0.67)
+
+.arrow.left
+  margin-top: 25%
+  margin-left: -28%
+
+.arrow.right
+  margin-top: -18%
+  margin-left: 25%
 
 .row.buy
   margin: 10px
+
+.row.views
+  margin: 0
