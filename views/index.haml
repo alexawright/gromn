@@ -19,10 +19,12 @@
 
       .about
         %img.full-width-image{:src => 'http://placehold.it/600x300'}
+        .row.blocktext
+          %h9 Our Story
         .inner-box.about
           .row
             .col-sm-6
-              %p GROMN is squid velit actually, Banksy locavore proident. Messenger bag ullamco chia bespoke, duis sapiente meggings Odd Future keytar accusamus nesciunt lo-fi plaid dolore. Sustainable accusamus sartorial, odio 3 wolf moon 8-bit Bushwick. Accusamus gluten-free cred raw denim 90's. Mixtape deep v banjo, Tumblr biodiesel ut viral. XOXO id flannel wayfarers farm-to-table, squid nulla Intelligentsia tattooed sapiente minim sed jean shorts. Kitsch next level officia, esse art party.
+              %p Hello GROMN is squid velit actually, Banksy locavore proident. Messenger bag ullamco chia bespoke, duis sapiente meggings Odd Future keytar accusamus nesciunt lo-fi plaid dolore. Sustainable accusamus sartorial, odio 3 wolf moon 8-bit Bushwick. Accusamus gluten-free cred raw denim 90's. Mixtape deep v banjo, Tumblr biodiesel ut viral. XOXO id flannel wayfarers farm-to-table, squid nulla Intelligentsia tattooed sapiente minim sed jean shorts. Kitsch next level officia, esse art party.
             .col-sm-6
               %p Placeat squid velit actually, Banksy locavore proident. Messenger bag ullamco chia bespoke, duis sapiente meggings Odd Future keytar accusamus nesciunt lo-fi plaid dolore. Sustainable accusamus sartorial, odio 3 wolf moon 8-bit Bushwick. Accusamus gluten-free cred raw denim 90's. Mixtape deep v banjo, Tumblr biodiesel ut viral. XOXO id flannel wayfarers farm-to-table, squid nulla Intelligentsia tattooed sapiente minim sed jean shorts. Kitsch next level officia.
 
@@ -36,60 +38,54 @@
             - 3.times do
               .col-sm-4
                 .item
-                  %a{:href => '/product'}
+                  %a{:href => '/product', "data-link" => "product"}
                     %img.thumbnail{:src => '/images/tank.jpg'}
           .row
             - 3.times do
               .col-sm-4
                 .item
-                  %a{:href => '/product'}
+                  %a{:href => '/product', "data-link" => "product"}
                     %img.thumbnail{:src => '/images/bag.jpg'}
           .row
             - 3.times do
               .col-sm-4
                 .item
-                  %a{:href => '/product'}
+                  %a{:href => '/product', "data-link" => "product"}
                     %img.thumbnail{:src => '/images/tank-black.jpg'}
 
       .product
         %img.product-main.img-responsive{:src => '/images/bag.jpg'}
         %img.full-width-image.img-responsive.view1{:src => 'http://placehold.it/950x500'}
-        %br
-        .row.views
-          .col-sm-12
-            - 5.times do
-              %a{:href => '/view1'}
-                %img.product-views{:src => 'http://placehold.it/60x60'}
-          .inner-box.product
-            / .row.arrows
-            /   .col-sm-6.left
-            /     %span.glyphicon.glyphicon-chevron-left
-            /   .col-sm-6.right
-            /     %span.glyphicon.glyphicon-chevron-right
-            .product-description
-              %h4 The Potato Tote
-              %hr
-              .row
-                .col-sm-6
-                  %p Hoodie High Life tousled culpa trust fund. Tempor enim occaecat, biodiesel flexitarian freegan culpa Odd Future brunch Banksy next level. Godard fugiat vero farm-to-table Tonx pickled. Schlitz enim whatever, chia ennui aute letterpress authentic Pinterest aliquip. Blue Bottle ethnic Schlitz ennui farm-to-table. Proident Godard letterpress, shabby chic butcher reprehenderit esse. Proident Godard letterpress, shabby chic butcher reprehenderit esse.
-                .col-sm-6
-                  %h6 Notes
-                  %p Cupidatat distillery keffiyeh, drinking vinegar put a bird on it XOXO scenester. American Apparel lomo reprehenderit duis. Put a bird on it cardigan Brooklyn mlkshk hashtag.
-                  %hr
-                  .row.buy
-                    .col-sm-6
-                      %h5 $45.00
-                    .col-sm-6
-                      %button Buy
-            .similar-items
-              %hr
-              %h7 Similar Items
-              .row
-                - 3.times do
-                  .col-sm-4
-                    .item
-                      %a{:href => '/product'}
-                        %img.similar-items{:src => '/images/tank.jpg'}
+        .inner-box.product
+          / .row.arrows
+          /   .col-sm-6.left
+          /     %span.glyphicon.glyphicon-chevron-left
+          /   .col-sm-6.right
+          /     %span.glyphicon.glyphicon-chevron-right
+          .product-description
+            %h4 The Potato Tote
+            %hr
+            .row
+              .col-sm-6
+                %p Hoodie High Life tousled culpa trust fund. Tempor enim occaecat, biodiesel flexitarian freegan culpa Odd Future brunch Banksy next level. Godard fugiat vero farm-to-table Tonx pickled. Schlitz enim whatever, chia ennui aute letterpress authentic Pinterest aliquip. Blue Bottle ethnic Schlitz ennui farm-to-table. Proident Godard letterpress, shabby chic butcher reprehenderit esse. Proident Godard letterpress, shabby chic butcher reprehenderit esse.
+              .col-sm-6
+                %h6 Notes
+                %p Cupidatat distillery keffiyeh, drinking vinegar put a bird on it XOXO scenester. American Apparel lomo reprehenderit duis. Put a bird on it cardigan Brooklyn mlkshk hashtag.
+                %hr
+                .row.buy
+                  .col-sm-6
+                    %h5 $45.00
+                  .col-sm-6
+                    %button Buy
+          .similar-items
+            %hr
+            %h7 Similar Items
+            .row
+              - 3.times do
+                .col-sm-4
+                  .item
+                    %a{:href => '/product', "data-link" => "product"}
+                      %img.similar-items{:src => '/images/tank.jpg'}
 
       .contact
         .inner-box.contact
