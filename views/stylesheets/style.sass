@@ -27,15 +27,6 @@ body
   overflow: auto
 
 .main-box-content
-  .about, 
-  .collections,
-  .store,
-  .product,
-  .contact,
-  .view1,
-    display: none
-
-.main-box-content
   +opacity(0)
   +transition(2s opacity ease-in-out)
   &.load
@@ -54,6 +45,7 @@ body
     padding: 0px
     width: 950px
     margin: auto
+
 
 img
   &.full-width-image

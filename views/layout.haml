@@ -19,9 +19,16 @@
     %link{:href => "/ico/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}/
     
   %body
-    / = haml :navbar
+    
     .container
-      = yield
+      = haml :nav
+
+      .main-box
+        .main-box-content
+          = yield
+
+      = haml :footer
+
     %script{:src => "/js/jquery.js"}
     %script{:src => "/js/dropdown.js"}
     %script{:src => "/js/tooltip.js"}
